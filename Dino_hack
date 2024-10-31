@@ -1,0 +1,4 @@
+#Dino invencible y super rápido
+Runner.instance_.gameOver = 
+function() {};
+Runner.instance_.currentSpeed = 20;
