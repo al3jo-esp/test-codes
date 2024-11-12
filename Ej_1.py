@@ -1,16 +1,14 @@
 #Usuario y contraseña
 Username=input("Nombre de usuario: ")
 Password=input("Contraseña: ")
-if Username=="Gwen" and Password=="excalibur":
+if Username=="Gwen" and Password=="Excalibur":
  print("Usuario y contraseña correctos, puedes ingresar.")
 else:
  print("Usuario/contraseña incorrecto. Vuelve a intentarlo!")
-
-Username=input("Nombre de usuario: ")
-Password=input("Contraseña: ")
-while Username!="Gwen" or Password!="excalibur":
-  print("Usuario/contraseña incorrecto. Vuelve a intentarlo!")
+ while Username!="Gwen" and Password !="Excalibur":
   Username=input("Nombre de usuario: ")
-  Password=input("Contraseña: ")
+Password=input("Contraseña: ")
+if Username=="Gwen" and Password=="Excalibur":
+ print("Usuario y contraseña correctos, puedes ingresar.")
 else:
-   print("Usuario y contraseña correctos, puedes ingresar.")
+ print("Usuario/contraseña incorrecto. Vuelve a intentarlo!")
