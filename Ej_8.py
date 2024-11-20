@@ -1,3 +1,4 @@
+#porcentaje de aprobados y su media
 aprobados=0
 cantidad=0
 sumaAprobados=0
