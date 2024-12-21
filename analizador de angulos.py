@@ -1,3 +1,4 @@
+#SE NECESITAN LAS LIBRERIAS NUMPY Y MATPLOT
 import numpy as np
 import matplotlib.pyplot as plt
 
