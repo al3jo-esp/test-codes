@@ -1,4 +1,3 @@
-#SE NECESITAN LAS LIBRERIAS NUMPY Y MATPLOT
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -26,9 +25,9 @@ def plot_unit_circle_with_angle(grados, radio=1):
     plt.plot([D[0], B[1]], [D[1], B[1]], 'red')  # Línea coseno
 
 #Añadir puntos en la leyenda
-    plt.scatter(*A, color="black", label="A (0, 0)")
-    plt.scatter(*C, color="black", label=f"C ({C[0]:.2f}, {C[1]:.2f})")
-    plt.scatter(*D, color="black", label=f"D ({D[0]:.2f}, 0)")
+    plt.scatter(*A, color="black")
+    plt.scatter(*C, color="black")
+    plt.scatter(*D, color="black")
 
 #Configurar la gráfica
     plt.axhline(0, color='black', linewidth=0.5)
@@ -44,7 +43,7 @@ def plot_unit_circle_with_angle(grados, radio=1):
 #Pedir el radio
 radio = float(input("¿Qué radio quieres? "))
 
-#Loop para calcular múltiples ángulos
+#Bucle para calcular múltiples ángulos
 while True:
     #Pedir el ángulo
     angulo = int(input("¿Qué ángulo quieres calcular? "))
