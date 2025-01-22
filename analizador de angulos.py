@@ -20,10 +20,9 @@ def plot_unit_circle_with_angle(grados, radio=1):
 #Graficar
     plt.figure(figsize=(6.5, 6.5))
     plt.plot(x_circ, y_circ, 'lime', label="Círculo")  # Círculo
-    plt.plot([A[0], C[0]], [A[1], C[1]], 'red', label=f"sin({grados}°) = {np.sin(radianes):.4f}")  # Línea hipotenusa
-    plt.plot([C[0], D[0]], [C[1], D[1]], 'blue', label=f"cos({grados}°) = {np.cos(radianes):.4f}")  # Línea seno
-    plt.plot([D[0], B[1]], [D[1], B[1]], 'red')  # Línea coseno
-
+    plt.plot([A[0], C[0]], [A[1], C[1]], 'yellow')  # Linea Hipotenusa
+    plt.plot([C[0], D[0]], [C[1], D[1]], 'blue', label=f"sin({grados}°) = {np.sin(radianes):.4f}")  # Línea coseno
+    plt.plot([D[0], B[1]], [D[1], B[1]], 'red',label=f"cos({grados}°) = {np.cos(radianes):.4f}")  # Línea seno
 #Añadir puntos en la leyenda
     plt.scatter(*A, color="black")
     plt.scatter(*C, color="black")
@@ -55,6 +54,11 @@ while True:
         if continuar in ['s', 'n']:
             break
         print("Entrada no válida. Por favor, introduce 's' para sí o 'n' para no.")
+    
+    #Salir si la respuesta es "n"
+    if continuar == 'n':
+        print("¡Gracias por usar el programa!")
+        break
     
     #Salir si la respuesta es "n"
     if continuar == 'n':
