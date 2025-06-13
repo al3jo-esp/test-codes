@@ -1,4 +1,4 @@
-#Dino invencible y super rápido
+#Dino invencible y super rápido (A UTILIZAR EN GOOGLE CHROME)
 Runner.instance_.gameOver = 
 function() {};
 Runner.instance_.currentSpeed = 20;
