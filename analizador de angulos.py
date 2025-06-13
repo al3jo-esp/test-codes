@@ -52,8 +52,8 @@ def plot_circle_pro(grados, radio=1):
     plt.figure(figsize=(7, 7))
     plt.plot(x_circ, y_circ, 'lime', label="Círculo unitario")
     plt.plot([A[0], C[0]], [A[1], C[1]], 'red', label="Hipotenusa (Radio)")
-    plt.plot([D[0], C[0]], [D[1], C[1]], 'blue', label=f"Cateto opuesto (sen({grados}°) = {np.sin(radianes):.4f})")
-    plt.plot([A[0], D[0]], [A[1], D[1]], 'orange', label=f"Cateto adyacente (cos({grados}°) = {np.cos(radianes):.4f})")
+    plt.plot([D[0], C[0]], [D[1], C[1]], 'blue', label=f"Cateto opuesto ; sen ({grados}°) = {np.sin(radianes):.4f}2")
+    plt.plot([A[0], D[0]], [A[1], D[1]], 'orange', label=f"Cateto adyacente ; cos ({grados}°) = {np.cos(radianes):.4f}")
 
     arco = np.linspace(0, radianes, 100)
     plt.plot(0.5 * np.cos(arco), 0.5 * np.sin(arco), color='purple')
